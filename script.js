@@ -108,7 +108,7 @@ document.querySelector(".search button").addEventListener("click", function () {
     var Table = document.getElementById("myClass");
     Table.innerHTML = "";
     weather.search();
-    weather
+    // weather
 });
 
 document
