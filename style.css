@@ -102,20 +102,3 @@ th {
     display: flex;
     justify-content: space-between;
 }
-
-/* var arr1;
-// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
-for (let i = 0; i < 7; i++) {
-    arr1[i] = row.insertCell(i);
-}
-
-
-
-// Add some text to the new cells:
-arr1[0].innerHTML = "Monday";
-arr1[1].innerHTML = "Tuesday";
-arr1[2].innerHTML = "Wednesday";
-arr1[3].innerHTML = "Thursday";
-arr1[4].innerHTML = "Friday";
-arr1[5].innerHTML = "Saturday";
-arr1[6].innerHTML = "Sunday"; */
