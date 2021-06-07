@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    font-size: 120%;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 920px;
+    margin: 1em;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* var arr1;
+// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+for (let i = 0; i < 7; i++) {
+    arr1[i] = row.insertCell(i);
+}
+
+
+
+// Add some text to the new cells:
+arr1[0].innerHTML = "Monday";
+arr1[1].innerHTML = "Tuesday";
+arr1[2].innerHTML = "Wednesday";
+arr1[3].innerHTML = "Thursday";
+arr1[4].innerHTML = "Friday";
+arr1[5].innerHTML = "Saturday";
+arr1[6].innerHTML = "Sunday"; */

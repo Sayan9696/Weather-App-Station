@@ -1,0 +1,12 @@
+https://github.com/DenverCoder1/weather-app-tutorial
+
+https://home.openweathermap.org/api_keys
+https://openweathermap.org/api/one-call-api#data
+https://openweathermap.org/current
+
+https://www.youtube.com/watch?v=WZNG8UomjSI
+
+
+https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly&units=metric&appid=95f27eb8c8304adbcd97903cd9596551
+
+https://api.openweathermap.org/data/2.5/weather?q=Kolkata&units=metric&appid=95f27eb8c8304adbcd97903cd9596551
