@@ -5,9 +5,9 @@ This weather app will show the weather information that it will get from the API
 various weather data through API. We integrate the API into our app and use the data on our website.
 
 ### Setup
-- To get a local copy up and running follow these simple example steps.
+- To get a local copy and running follow these simple example steps.
 
-Clone the repository unto your local machine.
+Clone the repository into your local machine.
 ```
 https://github.com/Sayan9696/Weather-App-Station.git
 ```
