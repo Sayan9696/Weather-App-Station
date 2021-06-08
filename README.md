@@ -1,8 +1,7 @@
 # Weather-App-Station
-It is a Simple Weather Application developed by myself using HTML, CSS3, JavaScript & OpenWeatherMap API.
+It's a Simple Weather Application developed by me using HTML, CSS3, JavaScript & OpenWeatherMap API.
 
-This weather app will show the weather information that it will get from the API like this, an Icon that shows the weather status, the temperature value (18°C) in Celsius unit, the weather description (clear sky), and then the user's city. This Application will provide you the weather forcast for upcomingc 8 days with proper description. OpenWeatherMap is a service that provides
-various weather data through API. We integrate the API into our app and use the data on our website.
+This weather app will show the weather information that it will get from the API like this, an Icon that shows the weather status, the temperature value (18°C) in Celsius unit, the weather description (clear sky), and then the user's city. This Application will provide you the weather forecast for upcoming 8 days with proper description. OpenWeatherMap is a service that provides various weather data through API. We integrate the API into our app and use the data on our website.
 
 ### Setup
 - To get a local copy and running follow these simple example steps.
