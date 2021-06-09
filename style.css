@@ -13,11 +13,13 @@ body {
 
 .card {
     background: #000000d0;
+    display: flex;
+    flex-direction: column;
     color: white;
-    padding: 2em;
+    padding: 10px;
     border-radius: 30px;
     width: 100%;
-    max-width: 820px;
+    max-width: 1000px;
     margin: 1em;
 }
 
@@ -86,6 +88,10 @@ input.search-bar {
     left: 20px;
 }
 
+.weather {
+    border-bottom: 2px solid white;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -107,12 +113,15 @@ th {
 .myClass {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
     /* justify-content: space-between; */
 
 }
 
 .myClass>div {
     display: flex;
+    text-align: center;
 
 }
 
@@ -121,14 +130,48 @@ th {
 }
 
 @media screen and (max-width:600px) {
+
+    .card {
+        height: 94vh;
+        overflow: hidden;
+        margin: 5px;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(111, 105, 105);
+        border-radius: 10px;
+
+    }
+
     .myClass>div {
         flex-direction: column;
         text-align: center;
 
     }
 
+    .myClass {
+        height: 70%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-top: 25px;
+    }
+
     .myClass hr {
         opacity: 1;
         width: 100%;
+    }
+
+    .weather {
+        height: 30%;
+        /* overflow-y: scroll; */
+    }
+
+    .search {
+        height: 6%;
     }
 }

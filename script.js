@@ -89,7 +89,7 @@ let weather = {
         for (let item of dailyForecast) {
             content = content + `
             <div>
-            <div>${day[i++%7]}</div>
+            <div><b>${day[i++%7]}</b></div>
             <div>Min ${item.temp.min} °C</div>
             <div>Max ${item.temp.max} °C</div>
             <div>Humidity ${item.humidity}%</div>
