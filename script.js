@@ -118,7 +118,7 @@ let weather = {
 };
 
 document.querySelector(".search button").addEventListener("click", function () {
-    var Table = document.getElementById("myClass");
+    var Table = document.querySelector(".myClass");
     Table.innerHTML = "";
     weather.search();
     // weather
@@ -128,7 +128,7 @@ document
     .querySelector(".search-bar")
     .addEventListener("keyup", function (event) {
         if (event.key == "Enter") {
-            var Table = document.getElementById("myClass");
+            var Table = document.querySelector(".myClass");
             Table.innerHTML = "";
             weather.search();
         }
