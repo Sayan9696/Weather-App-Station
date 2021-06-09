@@ -103,3 +103,32 @@ th {
     display: flex;
     justify-content: space-between;
 }
+
+.myClass {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+}
+
+.myClass>div {
+    display: flex;
+
+}
+
+.myClass hr {
+    opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    .myClass>div {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .myClass hr {
+        opacity: 1;
+        width: 100%;
+    }
+}

@@ -67,34 +67,47 @@ let weather = {
     },
 
     displayForecast: function (dailyForecast) {
-        var table = document.getElementById("myClass");
+        var table = document.querySelector(".myClass");
 
         // Create an empty <tr> element and add it to the 1st position of the table:
-        var row = table.insertRow(0);
-        var row1 = table.insertRow(1);
+        var row = document.createElement('div');
+        var row1 = document.createElement('div');
         row1.style.fontSize = "16px";
-        var row2 = table.insertRow(2);
+        var row2 = document.createElement('div');
         row2.style.fontSize = "16px";
-        var row3 = table.insertRow(3);
+        var row3 = document.createElement('div');
         row3.style.fontSize = "15px";
-        var row4 = table.insertRow(4);
+        var row4 = document.createElement('div');
+        let content = "";
+        table.appendChild(row);
+
 
         var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
         let dt = new Date();
         let i = dt.getDay();
         for (let item of dailyForecast) {
-
+            content = content + `
+            <div>
+            <div>${day[i++%7]}</div>
+            <div>Min ${item.temp.min} °C</div>
+            <div>Max ${item.temp.max} °C</div>
+            <div>Humidity ${item.humidity}%</div>
+            <div><img src=
+            "https://openweathermap.org/img/wn/${item.weather[0].icon}.png"></div></div><hr>
+            `
             // console.log(item.weather[0]);
 
-            row.innerHTML = row.innerHTML + `<td>${day[i++%7]}</td>`;
-            row1.innerHTML = row1.innerHTML + `<td>Min ${item.temp.min} °C</td>`;
-            row2.innerHTML = row2.innerHTML + `<td>Max ${item.temp.max} °C</td>`;
-            row3.innerHTML = row3.innerHTML + `<td>Humidity ${item.humidity}%</td>`;
-            row4.innerHTML = row4.innerHTML + `<td><img src=
-            "https://openweathermap.org/img/wn/${item.weather[0].icon}.png"></td>`;
-        }
+            // row.innerHTML = row.innerHTML + `<div class="col">${day[i++%7]}</div>`;
+            // row1.innerHTML = row1.innerHTML + `<div class="col">Min ${item.temp.min} °C</div>`;
+            // row2.innerHTML = row2.innerHTML + `<div class = "col">Max ${item.temp.max} °C</div>`;
+            // row3.innerHTML = row3.innerHTML + `<div class ="col">Humidity ${item.humidity}%</div>`;
+            // row4.innerHTML = row4.innerHTML + `<div class ="col"><img src=
+            // "https://openweathermap.org/img/wn/${item.weather[0].icon}.png"></div>`;
 
+
+        }
+        row.innerHTML = content;
 
     },
     fetchForecast: async function () {
